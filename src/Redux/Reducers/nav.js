@@ -1,7 +1,8 @@
-import { ACTIVE_PAGE }  from '../Actions/ACTION_TYPES'
+import { ACTIVE_PAGE, SCROLL_TO }  from '../Actions/ACTION_TYPES'
 
 const initialState = { 
-    activePage: null
+    activePage: 'Home',
+    scrollTo: null
 }
 
 function Nav(state = initialState, action) { 
@@ -12,6 +13,11 @@ function Nav(state = initialState, action) {
                 activePage: action.payload
             }
             break;
+        case SCROLL_TO: 
+            return { 
+                ...state, 
+                scrollTo: action.payload
+            }
         default: return state
     }
 }

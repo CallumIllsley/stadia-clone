@@ -1,13 +1,15 @@
 import React from 'react'
 import Styles from './landing.module.css'
+import MockUp from '../../../Assets/mock.png'
 import DevicesTwoToneIcon from '@material-ui/icons/DevicesTwoTone'
 import CloudTwoToneIcon from '@material-ui/icons/CloudTwoTone'
 import SpeedTwoToneIcon from '@material-ui/icons/SpeedTwoTone'
 import VideogameAssetTwoToneIcon from '@material-ui/icons/VideogameAssetTwoTone';
 
-function LandingHeader() { 
-    return ( 
+function LandingHeader({ref, scrollToRef}) { 
+    return (
         <div className={Styles.landingHeader}>
+            <img src={MockUp} className={Styles.mockupImage}></img>
             <div className={Styles.headerInfo}>
                 <div className={Styles.headerInfoItem} >
                     <DevicesTwoToneIcon className={Styles.headerIcon} size='large'/>
@@ -26,6 +28,7 @@ function LandingHeader() {
                     <label className={Styles.headerLabels}>All of your games, in one place.</label>
                 </div>
             </div>
+            
         </div>
     )
 }
