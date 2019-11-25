@@ -1,19 +1,22 @@
 .navContainer { 
+    background-color: black;
+    position: fixed;
+    z-index: 3;
     width: 100vw;
-    max-height: 10vh;
 }
 
 .navButton { 
     margin: 4%;
     float: left;
+    color: white !important;
 }
 
 .login { 
     margin: 1%;
     float: right;
+    color: white !important;
 }
 
 .active {
-    color: white !important;
     background-color: rgba(199, 0, 57, .5) !important;
 }
