@@ -37,7 +37,6 @@ function Landing() {
                 <h1 className={Styles.platformsHeader}>All of your favourite platforms.</h1>
                 <Element className={Styles.platformsContainer} name='platform'>
                     <div ref={ref} className={Styles.platforms}>
-                        {console.log(inView)}
                         <animated.img style={inView ? platformAnim : null} className={Styles.platformImg} onClick={() => window.open('https://store.steampowered.com/')} src={Steam}/>
                         <animated.img style={inView ? platformAnim : null} className={Styles.platformImg} onClick={() => window.open('https://www.origin.com/')} src={Origin}/>
                         <animated.img style={inView ? platformAnim : null} className={Styles.platformImg} onClick={() => window.open('http://blizzard.com/')} src={BattleNet}/>
