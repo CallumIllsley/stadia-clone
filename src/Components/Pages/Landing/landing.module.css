@@ -2,5 +2,78 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 10% 90%;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+.BG { 
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.1;
+    overflow: hidden;
+}
+
+.nav {
+    grid-row-start: 0;
+    grid-row-end: 1;
+}
+
+.headerContainer { 
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    grid-row-start: 1;
+    top: 3.2vh;
+    width: 100vw;
+    height: 75vh;
+}
+
+.landingHeader { 
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 5% 70% 20% 5%;
+}
+
+.headerInfo { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.headerInfoItem { 
+    display: grid;
+    max-width: 10vw;
+    grid-template-rows: 70% 30%;
+    width: 25%;
+}
+
+.headerLabels { 
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-weight: 600;
+    font-size: .8em !important;
+    word-wrap: break-word;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headerIcon { 
+    grid-row-start: 0;
+    grid-row-end: 1;
+    font-size: 3em !important;
+    font-weight: 100;
+    margin: auto;
+    margin-top: 30%;
 }

@@ -12,7 +12,8 @@ function Nav() {
     return ( 
         <div className={Styles.navContainer}>
             <div className={Styles.navButtons}>
-                <Button 
+                <Button
+                    size='small'
                     className={currentPage === 'Home' ? `${Styles.navButton} ${Styles.active}` : `${Styles.navButton}`} 
                     onClick={() => {
                         dispatch(activePage('Home'))
@@ -21,11 +22,12 @@ function Nav() {
                     >Home
                 </Button>
                 <Button 
+                    size='small'
                     className={currentPage === 'About' ? `${Styles.navButton} ${Styles.active}` : `${Styles.navButton}`} 
                     onClick={() => dispatch(activePage('About'))}
                     >About
                 </Button>
-                <Button className={`${Styles.login}`} >Login</Button>
+                <Button size='small' className={`${Styles.login}`} >Login</Button>
             </div>
         </div>
     )
