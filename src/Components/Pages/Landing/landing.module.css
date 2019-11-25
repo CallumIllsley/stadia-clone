@@ -116,6 +116,6 @@
 }
 
 .platformImg:hover { 
-    transform: scale(0.975);
+    transform: scale(0.9) !important;
     box-shadow: 0px -8px 39px 0px rgba(0,0,0,1);
 }
