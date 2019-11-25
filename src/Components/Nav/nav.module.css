@@ -1,0 +1,19 @@
+.navContainer { 
+    width: 100vw;
+    max-height: 10vh;
+}
+
+.navButton { 
+    margin: 4%;
+    float: left;
+}
+
+.login { 
+    margin: 1%;
+    float: right;
+}
+
+.active {
+    color: white !important;
+    background-color: rgba(199, 0, 57, .5) !important;
+}
