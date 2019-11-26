@@ -1,0 +1,129 @@
+.mainContainer { 
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 100%;
+}
+
+.nav { 
+    grid-column-start: 0;
+    grid-column-end: 1;
+}
+
+.navMenu {
+    position: fixed;
+    width: 5vw;
+    height: 5vh;
+}
+
+.navIcon { 
+    font-size: 2em !important;
+    margin-left: -40% !important;
+    margin-top:8% !important;
+    color: white;
+}
+
+.navIcon:hover { 
+    transform: scale(1.2)
+}
+
+.topNavWrapper {
+    position: fixed;
+    height: 5vh;
+    width: 100vw;
+    background-color:  #3d3d3d;
+    box-shadow: 0px 5px 12px -2px rgba(0,0,0,.5);
+    display: grid; 
+    grid-template-columns: 30% 40% 28% 2%;
+}
+
+.searchBar { 
+    grid-column-start: 2;
+    height: 80%;
+    margin-top: .75%;
+    color: white !important;
+}
+
+.settings { 
+    grid-column-start: 4;
+    margin-top: 20% !important;
+    font-size: 2em !important;
+    color: white;
+}
+
+.settings:hover { 
+    transform: scale(1.2)
+}
+
+.gamesContainer { 
+    position: relative;
+    grid-row-start: 2;
+    margin-top: 1%;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.gameCard { 
+    width: 15vw;
+    height: 40vh;
+    background-color: black;
+    box-shadow: 0px 5px 12px -2px rgba(0,0,0,.5);
+}
+
+.gameCardImage {
+    pointer-events: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.activeCardImage {
+    pointer-events: none;
+
+    position: relative;
+    opacity: 0.2;
+}
+
+.gameCardInfo {
+    pointer-events: none;
+
+    position: fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+.gameCardName {
+    pointer-events: none;
+
+    width: 15%;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+
+.gameCardAbout {
+    pointer-events: none;  
+    width: 15%;
+    position: relative;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.play {
+    pointer-events: auto;
+    position: absolute; 
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.play:hover {
+    transform: scale(1.2) !important;
+}

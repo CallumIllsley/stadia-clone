@@ -1,4 +1,4 @@
-import { ACTIVE_PAGE, SCROLL_TO } from './ACTION_TYPES'
+import { ACTIVE_PAGE, SCROLL_TO, NAV_VIS } from './ACTION_TYPES'
 
 export const activePage = (page) => { 
     return { 
@@ -11,5 +11,12 @@ export const scrollTo = (ref) => {
     return { 
         type: SCROLL_TO,
         payload: ref
+    }
+}
+
+export const showNav = (vis) => { 
+    return { 
+        type: NAV_VIS, 
+        payload: vis
     }
 }
