@@ -1,0 +1,29 @@
+.navWrapper {
+    position: fixed;
+    z-index: 1000 !important;
+    width: 5vw !important;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 10px 3px 21px -13px rgba(0,0,0,0.62);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.navItem { 
+    width: 100%;
+    height: 10%;
+}
+
+.navItem:hover { 
+    transform: scale(1.3);
+}
+
+.active { 
+    color:  rgba(199, 0, 57, 1);
+}
+
+.navIcon {
+    margin-top: 40% !important;
+    font-size: 2vw !important;
+}
+
