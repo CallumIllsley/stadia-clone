@@ -1,18 +1,21 @@
 .navContainer { 
-    background-color: white;
+    background-color:transparent;
     position: fixed;
     z-index: 3;
     width: 100vw;
 }
 
 .navButton { 
-    margin: 1% !important;
+    margin: 0.5% !important;
     float: left;
     color: Black !important;
+    background-color: white !important;
 }
 
 .login { 
-    margin: 1% !important;
+    background-color: white !important;
+    margin: .5% !important;
+    margin-right: 2% !important;
     float: right;
     color: Black !important;
 }

@@ -11,6 +11,9 @@ import BattleNet from '../../../Assets/battlenet.jpg'
 import EpicGames from '../../../Assets/epicgames.jpg'
 import { useSpring, animated } from 'react-spring'
 import { useInView } from 'react-intersection-observer'
+import InfoPanel from './InfoPanel'
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
  
 function Landing() { 
     const platformAnim = useSpring({ 
@@ -28,7 +31,7 @@ function Landing() {
             <Nav className={Styles.nav}/>
             <div className={Styles.headerContainer}>
                 <LandingHeader/>
-                <Link smooth={true} duration={500} to='platform'>
+                <Link smooth={true} offset={-200} duration={500} to='platform'>
                     <Fab size='small'className={Styles.viewGames} color='secondary'>
                         <ExpandMoreIcon/>
                     </Fab>
@@ -43,6 +46,22 @@ function Landing() {
                         <animated.img style={inView ? platformAnim : null} className={Styles.platformImg} onClick={() => window.open('https://epicgames.com/')} src={EpicGames}/>
                     </div>
                 </Element>
+                <div className={Styles.infoPanel}>
+                    <InfoPanel/>
+                </div>
+                <div className={Styles.footerContainer}>
+                    <div className={Styles.footer}>
+                        <p className={Styles.trademark}>© Placeholder</p>
+                        <div className={Styles.twitter}>
+                            <TwitterIcon className={Styles.twitterIcon}/>
+                            <p className={Styles.twitter}> @Placeholder</p>
+                        </div>
+                        <div className={Styles.facebook}>
+                            <FacebookIcon className={Styles.facebookIcon}/>
+                            <p className={Styles.facebook}> Placeholder</p>
+                        </div>
+                    </div> 
+                </div>
         </div>
     )
 }
